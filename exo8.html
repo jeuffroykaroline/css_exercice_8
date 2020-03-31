@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EXERCICE 8 CSS</title>
+        <meta name="description" content="création formulaire">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+
+             
+</head>
+<body>
+
+<form method="post" action="pageDestination.html"><!--code pour faire un formulaire-->
+    <fieldset class="identityFieldset">Votre identité
+        <legend class="identityFieldset"></legend><!--titre du premier formulaire-->
+
+           
+                <ol>
+                    <div class="champ">
+                        <li>
+                        <label for="firstName">Nom : </label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Nom">
+                        </li>
+                        <li>
+                        <label for="lastName">Prénom :</label>
+                        <input type="password" id="lastName"name="lastName" placeholder="Prénom">
+                        </li>
+                        <li>
+                        <label for="mail">Adresse mail :</label>
+                        <input type="email" id="mail" name="mail" placeholder="votre adresse mail">
+                        </li>
+                    </div>
+                </ol>
+            </fieldset>
+
+            <fieldset class="deliveryFieldset">
+                <legend class="deliveryFieldset">Adresse de Livraison</legend><!--titre du premier formulaire-->
+        
+                   
+                        <ol>
+                            
+                                <li>
+                                <label for="adress">Adresse : </label>
+                                <textarea name="adress" id="adress" cols="30" placeholder="Nom">
+                                </li>
+                                <li>
+                                <label for="zipCode">Code postal :</label>
+                                <input type="password" id="lastName"name="lastName" placeholder="Prénom">
+                                </li>
+                                <li>
+                                <label for="mail">Adresse mail :</label>
+                                <input type="email" id="mail" name="mail" placeholder="votre adresse mail">
+                                </li>
+                            </div>
+                        </ol>
+                    </fieldset>
+
+
+                    <fieldset class="paymentFieldset">
+                        <legend class="paymentFieldset">Informations de réglement</legend><!--titre du premier formulaire-->
+                
+                           
+                                <ol>
+                                     <li>
+                                            <div>
+                                                <input type="radio" id="VISA" name="bankCard">
+                                                <label for="VISA">VISA</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="mastercard" name="bankCard">
+                                                <label for="mastercard">mastercard</label>
+                                            </div>
+
+                                        
+                                            <li>
+                                            <label for="cardnumber">Numéro de carte :</label>
+                                            <input type="text" id="cardnumber"name="cardnumber" placeholder="numéro de carte banacaire">
+                                            </li>
+                                            <li>
+                                            <label for="securityCode">Code de sécurité:</label>
+                                            <input type="password" id="securityCode" name="securityCode" placeholder="votre code de sécurité">
+                                            </li>
+                                             <li>
+                                            <label for="owner">Nom du titulaire :</label>
+                                            <input type="text" id="owner" name="owner" placeholder="Nom figurant sur la carte">
+                                            </li>
+                            
+                                </ol>
+                            </fieldset>
+
+
+                            <button type="submit">J'achète</button>
+
+
+  </form>    
+    </body>
+</html>
